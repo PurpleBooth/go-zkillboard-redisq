@@ -3,6 +3,12 @@
 This is a go client for the RedisQ service from zKillboard. This is a service that creates a push interface for 
 consumers to be notified of kills.
 
+## Installing
+
+```bash
+go get -u -v github.com/purplebooth/go-zkillboard-redisq
+```
+
 ## Running
 
 To listen once
@@ -26,20 +32,6 @@ z.Listen(kills, errs)
 
 The continuous listen endpoint is largely there for simple apps, and I expect you will need to create your own variant 
 to achieve what you'd like for more expressive apps.
-
-## Dependencies
-
-```bash
-dep ensure
-```
-
-or alternatively
-
-```
-go get -u -v github.com/parnurzeal/gorequest
-go get -u -v github.com/urfave/cli           # Only for the demo CLI
-go get -u -v go.uber.org/zap                 # Only for the demo CLI
-```
 
 ## Demo Client
 
@@ -67,6 +59,17 @@ GLOBAL OPTIONS:
    --version, -V                  print only the version
 
 ```
+
+## Dependencies
+
+We use the following dependencies:
+
+```bash
+go get -u -v github.com/parnurzeal/gorequest
+go get -u -v github.com/urfave/cli           # Only for the demo CLI
+go get -u -v go.uber.org/zap                 # Only for the demo CLI
+```
+
 
 ## License and Contribution
 
