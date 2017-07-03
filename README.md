@@ -33,6 +33,8 @@ z.Listen(kills, errs)
 The continuous listen endpoint is largely there for simple apps, and I expect you will need to create your own variant 
 to achieve what you'd like for more expressive apps.
 
+More detailed documentation can be found in the [godoc](https://godoc.org/github.com/PurpleBooth/go-zkillboard-redisq/zkillboard-redisq)
+
 ## Demo Client
 
 ```bash
